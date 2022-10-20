@@ -56,9 +56,9 @@ function agregar() {
     "</td><td>" +
     cantidad +
     "</td><td>" +
-    impuesto +
+    subtotal  +
     "</td><td>" +
-    subtotal +
+    impuesto +
     "</td><td>" +
     total +
     "</td><td><button class='btnDel' onclick='eliminar(event);'>Eliminar</button></td></tr>";
