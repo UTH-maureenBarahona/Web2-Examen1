@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Factura</title>
+    <link rel="stylesheet" href="estilos.css" />
+    <script src="validar.js"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+  </head>
+  <body>
+    <center>
+      <div id="capturaDiv">
+        <table>
+          <tr>
+            <td>Seleccione Articulo:</td>
+            <td>
+              <select id="articulo">
+                <option value="estufa">Estufa</option>
+                <option value="lavadora">Lavadora</option>
+                <option value="refrigerador">Refrigerador</option>
+                <option value="licuadora">Licuadora</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Ingrese Precio:</td>
+            <td>
+              <input
+                type="text"
+                id="precio"
+                onkeypress="return validateDecimal(event);"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Ingrese Cantidad:</td>
+            <td>
+              <input
+                type="text"
+                id="cantidad"
+                onkeypress="return soloNumeros(event);"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Ingrese Subtotal:</td>
+            <td>
+              <label id="subtotal" onkeypress="return soloNumeros(event);"
+                >0</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>Valor Impuesto:</td>
+            <td>
+              <label id="impuesto" onkeypress="return soloNumeros(event);"
+                >0</label
+              >
+            </td>
+          </tr>
+
+          <tr>
+            <td>Valor Total:</td>
+            <td>
+              <label id="total" onkeypress="return soloNumeros(event);"
+                >0</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <br />
+              <button id="botonAdd" onclick="agregar();">
+                Agregar Articulo
+              </button>
+            </td>
+            <td>
+              <br />
+              <button id="botonCancel" onclick="cancelar();">Cancelar</button>
+              <button id="botonGrafico" onclick="generarGrafico();">
+                Generar Grafico
+              </button>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div>
+        <table id="grilla">
+          <thead>
+            <th>Articulo</th>
+            <th>Precio</th>
+            <th>Cantidad</th>
+            <th>Subtotal</th>
+            <th>ISV</th>
+            <th>Total</th>
+            <th>Eliminar</th>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <br />
+      <div id="pieChart"></div>
+      <br />
+      <div id="pieChart2"></div>
+    </center>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+#capturaDiv{
+    margin: 5%;
+    background-color: #fafafa;
+    width: 50%;
+    padding: 1rem;
+    border: 1px solid #ccc;
+}
+
+#botonAdd{
+    background-color: #25D538;
+    width: 200px;
+    height: 30px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#botonAdd:hover{
+    background-color: #0e8b1a;
+    border: 2px solid #000000;
+    color: white;
+}
+
+#botonCancel{
+    background-color: #EC1D1D;
+    width: 150px;
+    height: 30px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+}
+
+#botonCancel:hover{
+    background-color: #550a03;
+    border: 2px solid #000000;
+}
+
+#botonGrafico{
+    background-color: #ebf112;
+    width: 200px;
+    height: 30px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#botonGrafico:hover{
+    background-color: #deac07;
+    border: 2px solid #000000;
+    color: #000000;
+}
+
+#grilla{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 60%;
+}
+
+#grilla td, #grilla th{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#grilla tr:nth-child(even){
+    background-color: #f2f2f2f2;
+}
+
+#grilla tr:hover{
+    background-color: #ddd;
+}
+
+#grilla th{
+    background-color: #4CAF50;
+    padding: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    color: white;
+}
+
+.btnDel{
+    background-color: #EC1D1D;
+    color: white;
+    border-radius: 5px;
+}
