@@ -85,12 +85,13 @@ function agregar() {
 }
 
 function cancelar() {
-  document.getElementById("articulo").value = "";
+ 
   document.getElementById("precio").value = "";
   document.getElementById("cantidad").value = "";
-  document.getElementById("subtotal").value = "";
-  document.getElementById("impuesto").value = "";
-  document.getElementById("total").focus();
+  document.getElementById("subtotal").innerHTML = 0;
+  document.getElementById("impuesto").innerHTML = 0;
+  document.getElementById("total").innerHTML = 0;
+  document.getElementById("articulo").focus();
 }
 
 function eliminar(evento) {
